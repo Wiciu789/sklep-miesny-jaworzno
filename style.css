@@ -130,3 +130,14 @@ h1, h2, h3, ul, p {
 ul {
   text-align: left; /* żeby lista była czytelna i schludna */
 }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-container img {
+  max-width: 90%;
+  height: auto;
+}
