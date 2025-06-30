@@ -1,11 +1,11 @@
-/* Import czcionki Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* Import czcionki Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Tło vintage – drewniane */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   background-image: url('wood-background.jpg'); /* Upewnij się, że plik z tłem jest w folderze */
   background-size: cover;
   background-attachment: fixed;
@@ -77,7 +77,7 @@ section {
   padding: 30px;
   border-radius: 10px;
   max-width: 900px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Logo */
