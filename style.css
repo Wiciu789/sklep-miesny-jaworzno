@@ -105,4 +105,28 @@ footer {
     font-size: 14px;
     margin-top: 50px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+h1, h2, h3, ul, p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: left; /* żeby lista była czytelna i schludna */
+}
