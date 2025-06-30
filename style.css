@@ -1,29 +1,26 @@
 
 body {
+  background-image: url('tlo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8f2;
-  color: #2e2e2e;
-  text-align: center;
-}
-.logo-section {
-  padding: 100px 20px;
+  font-family: Arial, sans-serif;
 }
 .logo {
-  width: 100px;
-}
-.slogan {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #8b0000;
-}
-.enter-btn {
-  display: inline-block;
+  text-align: center;
   margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #8b0000;
-  color: white;
+}
+.logo img {
+  width: 300px;
+}
+.nav {
+  text-align: center;
+  margin-top: 20px;
+}
+.nav a {
+  margin: 0 15px;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
 }
