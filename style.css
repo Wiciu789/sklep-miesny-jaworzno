@@ -1,111 +1,16 @@
-/* Tło vintage - drewniane */
+/* Import czcionki Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Tło vintage – drewniane */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('wood-background.jpg'); /* Upewnij się, że plik z tłem jest w folderze */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #2c2c2c;
-}
-
-/* Nagłówki */
-h1, h2, h3 {
-    text-align: center;
-    color: #4b2e1f;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
-}
-
-/* Nawigacja */
-nav {
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 10px 30px;
-    border-bottom: 3px solid #8b5c3e;
-    font-weight: bold;
-}
-
-nav a {
-    color: #4b2e1f;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #c1440e;
-    text-shadow: 1px 1px 1px white;
-}
-
-/* Przycisk wejścia */
-.button {
-    display: block;
-    margin: 40px auto;
-    background-color: #8b5c3e;
-    color: white;
-    font-size: 18px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.button:hover {
-    background-color: #a6643a;
-}
-
-/* Sekcje */
-section {
-    background-color: rgba(255, 255, 255, 0.92);
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 900px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-/* Logo */
-.logo {
-    display: block;
-    margin: 40px auto 10px;
-    width: 180px;
-}
-
-/* Mapa */
-iframe {
-    width: 100%;
-    height: 350px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-/* Lista produktów */
-ul {
-    padding-left: 20px;
-    line-height: 1.7;
-    font-size: 18px;
-}
-
-/* Kontakt */
-.contact-info {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-size: 14px;
-    margin-top: 50px;
-}
-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-image: url('wood-background.jpg'); /* Upewnij się, że plik z tłem jest w folderze */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #2c2c2c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,23 +18,109 @@ body {
   text-align: center;
 }
 
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 15px 0;
-}
-
-h1, h2, h3, ul, p {
+/* Nagłówki */
+h1, h2, h3 {
+  text-align: center;
+  color: #4b2e1f;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-ul {
-  text-align: left; /* żeby lista była czytelna i schludna */
+/* Nawigacja główna */
+nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  font-weight: bold;
+  border-bottom: 3px solid #8b5c3e;
 }
+
+nav a {
+  color: #4b2e1f;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #c1440e;
+  text-shadow: 1px 1px 1px white;
+}
+
+/* Przycisk wejścia */
+.button {
+  display: block;
+  margin: 40px auto;
+  background-color: #8b5c3e;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #a6643a;
+}
+
+/* Sekcje */
+section {
+  background-color: rgba(255, 255, 255, 0.92);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 40px auto 10px;
+  width: 180px;
+}
+
+/* Mapa */
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Lista produktów */
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Kontakt */
+.contact-info {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Stopka */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* Logo kontener */
 .logo-container {
   display: flex;
   justify-content: center;
@@ -141,6 +132,8 @@ ul {
   max-width: 90%;
   height: auto;
 }
+
+/* Przycisk START */
 .przycisk-start {
   margin-top: 30px;
 }
