@@ -133,8 +133,8 @@ footer {
 }
 .logo {
   display: block;
-  margin: 40px auto 20px;
-  width: clamp(600px,90vw, 800px); /* minimum 400px, maks 600px */
+  margin: 60px auto;
+  width: clamp(800px,95vw, 1000px); 
   height: auto;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
