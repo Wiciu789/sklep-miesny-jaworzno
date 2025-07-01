@@ -124,7 +124,7 @@ footer {
 }
 
 .logo-container img {
-  width: 450px; /* jeszcze większe */
+  width: 80%; 
   height: auto;
   display: block;
   margin-bottom: 40px;
