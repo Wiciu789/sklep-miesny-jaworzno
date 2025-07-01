@@ -160,3 +160,49 @@ nav a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* <-- Cień tu */
   transition: color 0.3s ease;
 }
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0; left: -260px;
+  width: 260px;
+  height: 100vh;
+  background-color: #4b2e1f;
+  padding-top: 60px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a i {
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+.menu a:hover {
+  background-color: #ffcc66;
+  color: black;
+}
