@@ -129,10 +129,12 @@ footer {
 }
 
 .logo-container img {
-  width: 60vw;         /* 80% szerokości widocznego ekranu */
-  max-width: 600px;    /* Maksymalna wielkość w px */
+  width: 350px; /* Możesz dać więcej, np. 350px */
+  max-width: 90%;
   height: auto;
   display: block;
+  margin-bottom: 40px;
+  transform: translateY(-20px); /* lekko do góry */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
