@@ -130,7 +130,7 @@ footer {
 
 .logo-container img {
   width: 550px; /* Możesz dać więcej, np. 350px */
-  max-width: 90%;
+  max-width: none;
   height: auto;
   display: block;
   margin-bottom: 40px;
