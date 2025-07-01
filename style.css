@@ -127,8 +127,8 @@ footer {
 }
 
 .logo-container img {
-  width: 80vw;         /* 80% szerokości widocznego ekranu */
-  max-width: 700px;    /* Maksymalna wielkość w px */
+  width: 60vw;         /* 80% szerokości widocznego ekranu */
+  max-width: 600px;    /* Maksymalna wielkość w px */
   height: auto;
   display: block;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
