@@ -140,8 +140,8 @@ footer {
 }
 
 .logo img {
-  width: 50vw; /* połowa szerokości ekranu */
-  max-width: 300px; /* ale nie więcej niż 300px */
+  width: 85vw;              /* Szerokość 70% ekranu */
+  max-width: 700px;         /* Maksymalnie 600px */
   height: auto;
   display: block;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
