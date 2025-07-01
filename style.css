@@ -129,12 +129,11 @@ footer {
 }
 
 .logo-container img {
-  width: 550px; /* Możesz dać więcej, np. 350px */
-  max-width: none;
+  width: 700px; /* jeszcze większe */
   height: auto;
   display: block;
   margin-bottom: 40px;
-  transform: translateY(-20px); /* lekko do góry */
+  transform: translateY(-20px);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
