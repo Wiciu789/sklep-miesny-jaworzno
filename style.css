@@ -206,3 +206,12 @@ footer {
   transform: scale(1.05);
   background-color: #8b4b33;
 }
+.przycisk-start {
+  z-index: 10;
+  position: relative;
+}
+
+.przycisk-start a {
+  z-index: 10;
+  position: relative;
+}
