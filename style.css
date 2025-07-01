@@ -78,12 +78,7 @@ section {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo */
-.logo {
-  display: block;
-  margin: 40px auto 10px;
-  width: 180px;
-}
+
 
 /* Mapa */
 iframe {
