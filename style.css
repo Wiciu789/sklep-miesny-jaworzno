@@ -6,11 +6,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  background-image: url('wood-background.jpg'); /* Upewnij się, że plik z tłem jest w folderze */
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #2c2c2c;
+  background-color: #121212; /* Czarne matowe tło */
+  background-image: none;
+  color: #c2c2c2;
   display: flex;
   flex-direction: column;
   align-items: center;
