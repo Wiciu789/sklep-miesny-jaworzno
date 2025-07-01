@@ -132,17 +132,22 @@ footer {
   }
 }
 .logo {
-  display: block;
-  margin: 20px auto 0 auto;
-  width: 100vw;
-    max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto 20px auto;
+  width: 100%;
+}
+
+.logo img {
+  width: 50vw; /* połowa szerokości ekranu */
+  max-width: 300px; /* ale nie więcej niż 300px */
   height: auto;
+  display: block;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.logo:hover {
+.logo:hover img {
   transform: scale(1.05) rotate(-2deg);
   box-shadow: 0 0 25px rgba(255, 200, 0, 0.4);
 }
-
-
