@@ -135,7 +135,9 @@ footer {
 }
 /* Przycisk START */
 .przycisk-start {
-  margin-top: -20px;
+  position: relative;
+  top: -50px !important;
+  margin-top: 0 !important;
 }
 
 .przycisk-start a {
