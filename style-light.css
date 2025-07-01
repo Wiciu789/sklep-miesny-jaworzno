@@ -85,3 +85,13 @@ a.phone-link:hover {
   transform: scale(1.05);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
+footer {
+  background-color: #f8f0e3;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+  border-top: 2px solid #c7a17a;
+  margin-top: 40px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
