@@ -134,25 +134,16 @@ footer {
 /* Logo */
 .logo {
   display: block;
-  margin: 40px auto 10px;
-  width: 80%;
-  max-width: 400px;
+  margin: 30px auto;
+  width: clamp(300px, 85%, 450px);  /* SZEROKOŚĆ logo: min 300px, max 450px */
   height: auto;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
 /* Animacja po najechaniu na logo */
 .logo:hover {
   transform: scale(1.05) rotate(-1deg);
 }
-/* Logo animowane */
-.logo {
-  display: block;
-  margin: 30px auto;
-  width: clamp(200px, 80%, 400px);
-  height: auto;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
+
 
 .logo:hover {
   transform: scale(1.05) rotate(-2deg);
