@@ -215,3 +215,10 @@ footer {
   z-index: 10;
   position: relative;
 }
+.overlay {
+  pointer-events: none;
+}
+
+video {
+  pointer-events: none;
+}
