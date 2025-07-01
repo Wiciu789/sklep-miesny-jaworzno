@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Sklep Mięsny Jaworzno – Wiejski Rarytas</title>
-
+<!-- inne meta, tytuł, style -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <!-- SEO META TAGI -->
   <meta name="description" content="Sklep Mięsny Jaworzno – codziennie świeże mięsa, wędliny prosto z rodzinnej wędzarni. Najlepsza jakość, tradycja i smak.">
   <meta name="keywords" content="sklep mięsny Jaworzno, mięso, wędliny, boczek, karczek, wędzarnia, sklep Jaworzno, rzeźnik">
@@ -20,7 +21,20 @@
 </head
 
 <body>
-<div class="video-background">
+<!-- Przycisk hamburger -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- Menu -->
+  <nav class="menu" id="menu">
+    <a href="index.html"><i class="fas fa-home"></i>Strona główna</a>
+    <a href="onas.html"><i class="fas fa-info-circle"></i>O nas</a>
+    <a href="produkty.html"><i class="fas fa-box-open"></i>Produkty</a>
+    <a href="kontakt.html"><i class="fas fa-phone"></i>Kontakt</a>
+    <a href="dostawa.html"><i class="fas fa-truck"></i>Dostawa</a>
+  </nav>
+
+ 
+  <div class="video-background">
     <video autoplay muted loop playsinline>
       <source src="media/smoke_loop.mp4" type="video/mp4">
       Twoja przeglądarka nie obsługuje wideo w tle.
