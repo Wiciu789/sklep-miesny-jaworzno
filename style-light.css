@@ -219,3 +219,16 @@ nav a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.info-box {
+  background-color: #fff0e0;               /* jasne tło (ciepły beżowy) */
+  border: 2px solid #b97c56;               /* obramowanie w kolorze mięsa/wędzonki 😅 */
+  padding: 20px;                           /* odstęp wewnątrz ramki */
+  margin: 40px auto;                       /* odstęp od innych sekcji + wyśrodkowanie */
+  border-radius: 10px;                     /* zaokrąglone rogi */
+  max-width: 800px;                        /* szerokość ramki (żeby nie była na całą stronę) */
+  font-size: 17px;                         /* większa, czytelna czcionka */
+  line-height: 1.6;                        /* odstępy między wierszami – lepsza czytelność */
+  color: #3d2b1f;                          /* kolor tekstu – ciemny brąz, pasuje do stylu vintage */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* delikatny cień – daje efekt 3D */
+  text-align: center;                      /* tekst wyśrodkowany */
+}
