@@ -256,3 +256,23 @@ video {
     margin: 10px 0;
   }
 }
+/* Menu hamburgera domyślnie schowane */
+#menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Po kliknięciu pojawia się */
+#menu.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animacja fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
