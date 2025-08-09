@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<!-- inne meta, tytuł, style -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dostawa | Sklep Mięsny Jaworzno</title>
-  <link rel="stylesheet" href="style-light.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>Rezerwacja - Mięsny Zakątek</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <nav id="menu">
-    <div class="logo">Mięsny Zakątek</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul id="menu">
-      <li><a href="index.html">Strona główna🏠 </a></li>
-      <li><a href="onas.html">O nas📖</a></li>
-      <li><a href="produkty.html">Produkty🥩</a></li>
-      <li><a href="dostawa.html">Dostawa🚚</a></li>
-      <li><a href="kontakt.html">Kontakt📞</a></li>
+  <div class="banner">
+    Aleja Piłsudskiego 23, Jaworzno • Pon 6–13:30, Wt–Pt 6–15:30, Sob 6–11:30
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="onas.html">O nas</a></li>
+      <li><a href="produkty.html">Produkty</a></li>
+      <li><a href="dostawa.html">Rezerwacja</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
   </nav>
-</header>
 
-  
-
-  <section class="produkty-box">
-    <h1>Dostawa</h1>
-    <p>
-      W naszym sklepie mięsny klimat idzie w parze z wygodą. <br><br>
-      📞 Zadzwoń do nas, a my zarezerwujemy dla Ciebie towar – prosto z wędzarni, jeszcze ciepły!
-    </p>
-    <p>
-      ❗To nie typowa dostawa pod drzwi – to osobisty odbiór najwyższej jakości mięsa, specjalnie dla Ciebie przygotowanego.
-    </p>
-    <p>
-      Odbiory realizujemy codziennie, a w <strong>czwartki</strong> polecamy:
-      <ul>
-        <li>🔥 Ostre kiełbasy z rodzinnej wędzarni</li>
-        <li>💨 Ciepłe wyroby prosto spod wędzarnianego dymu</li>
-      </ul>
-    </p>
-    <p><a href="index.html">🛒 Powrót na stronę główną</a></p>
+  <section class="hero fade-in">
+    <h1>Rezerwacja produktów</h1>
+    <p>Zarezerwuj swoje ulubione wyroby, a my je dla Ciebie odłożymy</p>
   </section>
-<footer>
-  <p><strong>📍 <a href="https://maps.app.goo.gl/NiyW4vvMHMsLD6bbA" class="adres-link" target="_blank">Piłsudskiego 23, Jaworzno</a></strong></p>
-  <p><strong>🕒 Godziny:</strong> Pon 6–13 | Wt–Pt 6–16 | Sob 6–11 | Nd ❌</p>
-  <p style="margin-top: 10px;">&copy; 2025 Sklep Mięsny Jaworzno</p>
-</footer>
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
+
+  <section class="fade-in" style="padding: 2rem; max-width: 900px; margin: auto;">
+    <p>
+      W Mięsnym Zakątku możesz zarezerwować wybrane produkty telefonicznie, a następnie odebrać je w dogodnym dla siebie czasie w naszym sklepie.
+    </p>
+    <p>
+      Szczególnie polecamy nasze <strong>czwartkowe ciepłe wyroby</strong> prosto z wędzarni:
+    </p>
+    <ul>
+      <li>Boczki</li>
+      <li>Szynki</li>
+      <li>Karczki</li>
+    </ul>
+    <p>
+      Aby zarezerwować produkty, skontaktuj się z nami pod numerami telefonów podanymi w zakładce <a href="kontakt.html">Kontakt</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mięsny Zakątek • <a href="kontakt.html">Kontakt</a></p>
+  </footer>
 </body>
 </html>
-
