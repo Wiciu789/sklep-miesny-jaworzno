@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<!-- inne meta, tytuł, style -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produkty | Sklep Mięsny Jaworzno</title>
-  <link rel="stylesheet" href="style-light.css">
+  <title>Produkty - Mięsny Zakątek</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<nav id="menu">
-    <div class="logo">Mięsny Zakątek</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="banner">
+    Aleja Piłsudskiego 23, Jaworzno • Pon 6–13:30, Wt–Pt 6–15:30, Sob 6–11:30
+  </div>
+
+  <nav>
     <ul>
-      <li><a href="index.html">Strona Główna 🏠</a></li>
-      <li><a href="onas.html">O nas 👨‍🍳</a></li>
-      <li><a href="produkty.html">Produkty 🥩</a></li>
-      <li><a href="dostawa.html">Dostawa 🚚</a></li>
-      <li><a href="kontakt.html">Kontakt 📞</a></li>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="onas.html">O nas</a></li>
+      <li><a href="produkty.html">Produkty</a></li>
+      <li><a href="dostawa.html">Dostawa</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
   </nav>
-</header>
-  <!-- Nawigacja -->
 
-
-  <!-- Sekcja produktów -->
-  <<section class="produkty-box">
+  <section class="hero fade-in">
     <h1>Nasze produkty</h1>
-    <ul>
-      <li><strong>Wędliny</strong> – prosto z rodzinnych wędzarni</li>
-      <li><strong>Drób</strong> – świeży i lokalny</li>
-      <li><strong>Artykuły spożywcze</strong> – podstawowe produkty:przyprawy,makaron,ryż,cukier,mąka i wiele innych...</li>
-      <li><strong>Pieczywo</strong> – dostarczane codziennie rano, świeże i pachnące</li>
-    </ul>
-    <p style="margin-top: 10px;"><em>...i wiele, wiele innych!</em></p>
-    <br>
-    <a href="index.html">🔙 Powrót na stronę główną</a>
+    <p>Wędliny, mięsa i wyroby prosto z naszej wędzarni</p>
   </section>
-<section class="info-box">
-  <h2>🛠️ Ubijanie mięs na miejscu</h2>
-  <p>
-    W naszej ofercie znajduje się usługa <strong>ubijania rolad wołowych, wieprzowych oraz kotletów schabowych</strong>.<br>
-    Wszystko przygotowywane jest na świeżo, przy użyciu <strong>profesjonalnej maszyny dostępnej na miejscu w sklepie</strong>.<br>
-    Wystarczy poprosić – zrobimy to od ręki!<br><br>
-    🧊 Dodatkowo istnieje możliwość <strong>pakowania próżniowego wędlin</strong> – idealnie na drogę lub do dłuższego przechowywania!
-  </p>
-</section>
-  <!-- Stopka -->
- <footer class="footer-box">
-  <p>
-    <strong>📍 <a href="https://maps.app.goo.gl/Niy4Wv4vMHMsLD6bbA" target="_blank" style="color: inherit; text-decoration: underline; font-weight: bold;">
-    Piłsudskiego 23, Jaworzno</a></strong>
-  </p>
-  <p><strong>🕒 Godziny:</strong> Pon 6–13 | Wt–Pt 6–16 | Sob 6–11 | Nd ❌</p>
-  <p style="margin-top: 10px;">&copy; 2025 Sklep Mięsny Jaworzno</p>
-</footer>
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
+
+  <section class="products fade-in">
+    <!-- TU ZMIENIASZ produkty i obrazki -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Szynka">
+      <h3>Szynka Wędzona</h3>
+      <p>Wędzona naturalnie, o intensywnym aromacie i smaku.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Kiełbasa">
+      <h3>Kiełbasa Wiejska</h3>
+      <p>Tradycyjna receptura, mocno przyprawiona, aromatyczna.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Boczek">
+      <h3>Boczek Pieczony</h3>
+      <p>Soczysty boczek w ziołach, z chrupiącą skórką.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Salceson">
+      <h3>Salceson</h3>
+      <p>Klasyczny smak w nowoczesnym wydaniu, aromatyczny i świeży.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mięsny Zakątek • <a href="kontakt.html">Kontakt</a></p>
+  </footer>
 </body>
 </html>
-
