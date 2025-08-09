@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<!-- inne meta, tytuł, style -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | Sklep Mięsny Jaworzno</title>
-  <link rel="stylesheet" href="style-light.css">
+  <title>Kontakt - Mięsny Zakątek</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+  <div class="banner">
+    Aleja Piłsudskiego 23, Jaworzno • Pon 6–13:30, Wt–Pt 6–15:30, Sob 6–11:30
+  </div>
 
-</header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="onas.html">O nas</a></li>
+      <li><a href="produkty.html">Produkty</a></li>
+      <li><a href="dostawa.html">Dostawa</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-  
-<section class="produkty-box">
-  <h1>Kontakt</h1>
-  <ul>
-  <li><strong>Bożena:</strong> <a href="tel:506027305" class="phone-link">506 027 305</a></li>
-  <li><strong>Grzegorz:</strong> <a href="tel:506322950" class="phone-link">506 322 950</a></li>
-  <li><strong>Przemek:</strong> <a href="tel:519818565" class="phone-link">519 818 565</a></li>
-</ul>
+  <section class="hero fade-in">
+    <h1>Kontakt</h1>
+    <p>Skontaktuj się z nami</p>
+  </section>
 
-  <p><a href="index.html">🔙 Powrót na stronę główną</a></p>
-</section>
-<footer>
-  <p><strong>📍 <a href="https://maps.app.goo.gl/NiyW4vvMHMsLD6bbA" class="adres-link" target="_blank">Piłsudskiego 23, Jaworzno</a></strong></p>
-  <p><strong>🕒 Godziny:</strong> Pon 6–13 | Wt–Pt 6–16 | Sob 6–11 | Nd ❌</p>
-  <p style="margin-top: 10px;">&copy; 2025 Sklep Mięsny Jaworzno</p>
-</footer>
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
+  <section class="fade-in" style="padding: 2rem; max-width: 900px; margin: auto;">
+    <h3>Adres</h3>
+    <p>Aleja Piłsudskiego 23, 43-600 Jaworzno</p>
+
+    <h3>Godziny otwarcia</h3>
+    <p>Pon: 6:00–13:30<br>
+       Wt–Pt: 6:00–15:30<br>
+       Sob: 6:00–11:30<br>
+       Nd: nieczynne</p>
+
+    <h3>Telefony</h3>
+    <ul>
+      <li>Grzegorz: 506 322 950</li>
+      <li>Przemek: 519 818 565</li>
+      <li>Bożena: 506 027 305</li>
+    </ul>
+
+    <h3>Mapa</h3>
+    <!-- TU WSTAWIASZ kod Google Maps iframe -->
+    <iframe src="https://maps.google.com/maps?q=Aleja%20Piłsudskiego%2023%20Jaworzno&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mięsny Zakątek • <a href="kontakt.html">Kontakt</a></p>
+  </footer>
 </body>
 </html>
-
