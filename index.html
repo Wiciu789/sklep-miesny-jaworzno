@@ -3,112 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mięsny Zakątek  | Jaworzno - Tradycja i Smak</title>
+    <title>Mięsny Zakątek | Jaworzno - Tradycja od 1996</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">MIĘSNY ZAKĄTEK</div>
+            <div class="nav-loc"><i class="fas fa-map-marker-alt"></i> Jaworzno, Piłsudskiego 23</div>
         </div>
-        <div class="logo">MIĘSNY ZAKĄTEK <span>J</span></div>
-        <div class="nav-address"><i class="fas fa-map-marker-alt"></i> Piłsudskiego 23</div>
     </nav>
 
-    <div id="side-menu" class="side-nav">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
-        <a href="#home" onclick="toggleMenu()">Strona Główna</a>
-        <a href="#o-nas" onclick="toggleMenu()">O nas</a>
-        <a href="#oferta" onclick="toggleMenu()">Nasza Oferta</a>
-        <a href="#galeria" onclick="toggleMenu()">Galeria Wyrobów</a>
-        <a href="#kontakt" onclick="toggleMenu()">Kontakt</a>
+    <div id="sideMenu" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="#hero" onclick="toggleMenu()">Start</a>
+        <a href="#about" onclick="toggleMenu()">O nas</a>
+        <a href="#products" onclick="toggleMenu()">Oferta</a>
+        <a href="#pantry" onclick="toggleMenu()">Spiżarnia</a>
+        <a href="#contact" onclick="toggleMenu()">Kontakt</a>
     </div>
 
-    <header id="home" class="hero">
-        <header id="home" class="hero">
-    <div class="hero-text">
-        <h1>MIĘSNY ZAKĄTEK J</h1>
-        <p>Prawdziwe wędzenie od 1996 roku. Tradycyjne receptury, dym olchowy i smak bez chemii.</p>
-        <a href="#oferta" class="cta-button">Sprawdź naszą ofertę</a>
-    </div>
-</header>
-<section id="o-nas" class="section">
-    <h2 class="title">30 Lat Tradycji w Jaworznie</h2>
-    <div class="about-container">
-        <div class="about-card">
-            <h3>Rodzinna Pasja od 1996 roku</h3>
-            <p>Jesteśmy rodzinnym biznesem, który od trzech dekad stawia na naturę. Nasze mięso nie jest pompowane wodą, a wędliny powstają bez zbędnej chemii, bazując na sprawdzonych dostawcach z Polski.</p>
-        </div>
-        <div class="highlight-card">
-            <div class="badge">HIT SPRZEDAŻY</div>
-            <h3>Schab Ekologiczny</h3>
-            <p>Nasz flagowy produkt. Naturalnie kruchy, aromatyczny i przygotowany według starej szkoły masarstwa.</p>
-        </div>
-    </div>
-</section>
-    </section>
-
-    <section id="oferta" class="section dark-bg">
-        <h2 class="title white">Co oferujemy?</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-drumstick-bite"></i>
-                <h3>Swojskie Wędliny</h3>
-                <p>Wędzone naturalnie, bez chemii.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-bacon"></i>
-                <h3>Świeże Mięso</h3>
-                <p>Codzienne dostawy od sprawdzonych dostawców.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-utensils"></i>
-                <h3>Świeży Drób</h3>
-                <p>Codzienne dostawy drobiu od zaufanych, polskich hodowców. Gwarancja świeżości bez nastrzykiwania.</p>
-            </div>
-        </div>
-    </section>
-<section class="special-event">
-    <div class="event-content">
-        <h2><i class="fas fa-fire"></i> GORĄCE CZWARTKI!</h2>
-        <p>W każdy czwartek zapraszamy na nasze <strong>wyroby prosto z pieca!</strong></p>
-        <div class="event-badge">WYROBY NA CIEPŁO</div>
-        <p>Poczuj zapach prawdziwego wędzenia. Polecamy być rano!</p>
-    </div>
-</section>
-    <section id="kontakt" class="section">
-        <h2 class="title">Kontakt i Zamówienia</h2>
-        <div class="contact-grid">
-            <div class="contact-box">
-                <p>Grzegorz</p>
-                <a href="tel:+48506322950">506 322 950</a>
-            </div>
-            <div class="contact-box">
-                <p>Bożena (kontakt do 16:00)</p>
-                <a href="tel:+48506027305">506 027 305</a>
-            </div>
-            <div class="contact-box">
-                <p>Przemysław</p>
-                <a href="tel:+48519818565">519 818 565</a>
+    <section id="hero" class="hero-v2">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="badge-year">RODZINNY BIZNES OD 1996 ROKU</span>
+                <h1>Smak Prawdziwej Natury</h1>
+                <p>Czysty skład. Tradycyjne pieczenie. Mięso prosto od sprawdzonych polskich dostawców.</p>
+                <a href="#products" class="mcd-btn">Zobacz co mamy świeżego</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Mięsny Zakątek  | Jaworzno, Aleja Piłsudskiego 23</p>
+    <section id="about" class="mcd-section">
+        <div class="mcd-container">
+            <div class="mcd-grid-2">
+                <div class="mcd-card dark">
+                    <h2>30 Lat Tradycji</h2>
+                    <p>Działamy w Jaworznie od 1996 roku. U nas nie znajdziesz mięsa pompowanego wodą ani produktów pełnych chemii. Stawiamy na uczciwość i jakość, którą doceniają pokolenia.</p>
+                </div>
+                <div class="mcd-card gold">
+                    <span class="card-label">NASZ HIT</span>
+                    <h3>Schab Ekologiczny</h3>
+                    <p>Nasz flagowy produkt. Naturalnie pieczony, soczysty i aromatyczny. Prawdziwa duma naszej lady.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="mcd-section gray">
+        <div class="mcd-container">
+            <h2 class="center-title">Nasza Oferta</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="p-icon"><i class="fas fa-bread-slice"></i></div>
+                    <h4>Pieczenie Domowe</h4>
+                    <p>Soczyste boczki i karki pieczone w ziołach według starych receptur.</p>
+                </div>
+                <div class="product-item">
+                    <div class="p-icon"><i class="fas fa-mortar-pestle"></i></div>
+                    <h4>Swojskie Wyroby</h4>
+                    <p>Pasztety, salcesony i kaszanki robione na miejscu, bez zbędnych dodatków.</p>
+                </div>
+                <div class="product-item">
+                    <div class="p-icon"><i class="fas fa-feather"></i></div>
+                    <h4>Świeży Drób</h4>
+                    <p>Codzienne dostawy od polskich hodowców. Gwarancja świeżości.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pantry" class="pantry-section">
+        <div class="mcd-container">
+            <div class="pantry-banner">
+                <div class="pantry-text">
+                    <h3>Domowa Spiżarnia</h3>
+                    <p>U nas skompletujesz cały obiad. Oferujemy naturalne przyprawy bez glutaminianu, regionalne dodatki oraz wyselekcjonowane herbaty.</p>
+                </div>
+                <div class="pantry-tags">
+                    <span class="tag">#NaturalnePrzyprawy</span>
+                    <span class="tag">#Herbaty</span>
+                    <span class="tag">#BezChemii</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hot-banner">
+        <div class="hot-content">
+            <div class="fire-icon"><i class="fas fa-fire"></i></div>
+            <h2>GORĄCE CZWARTKI</h2>
+            <p>Wyroby prosto z pieca na Twoim talerzu.</p>
+            <div class="hot-time">KAŻDY CZWARTEK OD 05:00 RANO</div>
+        </div>
+    </section>
+
+    <section id="contact" class="mcd-section">
+        <div class="mcd-container">
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <h3>Godziny Otwarcia</h3>
+                    <ul class="hours-list">
+                        <li>Poniedziałek: <span>05:00 - 13:00</span></li>
+                        <li>Wtorek - Piątek: <span>05:00 - 15:30</span></li>
+                        <li>Sobota: <span>05:00 - 11:30</span></li>
+                        <li class="red">Niedziela: <span>Nieczynne</span></li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h3>Zamówienia i Kontakt</h3>
+                    <div class="contacts">
+                        <div class="contact-row">
+                            <strong>Grzegorz:</strong> <a href="tel:+48506322950">506 322 950</a>
+                        </div>
+                        <div class="contact-row">
+                            <strong>Bożena:</strong> <a href="tel:+48506027305">506 027 305</a>
+                            <span class="note">(do 16:00)</span>
+                        </div>
+                        <div class="contact-row">
+                            <strong>Przemysław:</strong> <a href="tel:+48519818565">519 818 565</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="final-footer">
+        <p>Mięsny Zakątek | Aleja Piłsudskiego 23, Jaworzno | Projekt strony: 2026</p>
     </footer>
 
     <script>
         function toggleMenu() {
-            const menu = document.getElementById("side-menu");
-            if (menu.style.width === "250px") {
+            const menu = document.getElementById("sideMenu");
+            if (menu.style.width === "280px") {
                 menu.style.width = "0";
             } else {
-                menu.style.width = "250px";
+                menu.style.width = "280px";
             }
         }
     </script>
