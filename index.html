@@ -3,70 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mięsny Zakątek - Jaworzno | Najlepsze Wędliny i Mięso</title>
-    
+    <title>Mięsny Zakątek J | Jaworzno - Tradycja i Smak</title>
     <link rel="stylesheet" href="style.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo">MIĘSNY ZAKĄTEK <span>J</span></div>
-        <div class="address-top"><i class="fas fa-map-marker-alt"></i> Jaworzno, Piłsudskiego 23</div>
+        <div class="nav-address"><i class="fas fa-map-marker-alt"></i> Piłsudskiego 23</div>
     </nav>
 
-    <section class="hero">
-        <h1>Mięsny Zakątek </h1>
-        <p>Rodzinna tradycja i najwyższa jakość wyrobów mięsnych. Sprawdź nasze swojskie wędliny i świeże dostawy mięsa.</p>
-    </section>
-
-    <div class="container">
-        <div class="info-card">
-            <h3><i class="fas fa-clock"></i> Godziny Otwarcia</h3>
-            <table>
-                <tr><td>Poniedziałek:</td><td>05:00 - 13:00</td></tr>
-                <tr><td>Wtorek - Piątek:</td><td>05:00 - 15:30</td></tr>
-                <tr><td>Sobota:</td><td>05:00 - 11:30</td></tr>
-                <tr><td>Niedziela:</td><td class="closed">Nieczynne</td></tr>
-            </table>
-        </div>
-
-        <div class="info-card">
-            <h3><i class="fas fa-store"></i> Nasz Sklep</h3>
-            <p><strong>Aleja Piłsudskiego 23</strong></p>
-            <p>43-600 Jaworzno</p>
-            <br>
-            <p>Zapraszamy po świeży towar prosto od lokalnych dostawców. Najlepsza jakość w Jaworznie!</p>
-        </div>
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="#home" onclick="toggleMenu()">Strona Główna</a>
+        <a href="#o-nas" onclick="toggleMenu()">O nas</a>
+        <a href="#oferta" onclick="toggleMenu()">Nasza Oferta</a>
+        <a href="#galeria" onclick="toggleMenu()">Galeria Wyrobów</a>
+        <a href="#kontakt" onclick="toggleMenu()">Kontakt</a>
     </div>
 
-    <section class="contact">
-        <h2>Zamówienia i Kontakt</h2>
-        <div class="phone-list">
-            <div class="phone-item">
+    <header id="home" class="hero">
+        <div class="hero-text">
+            <h1>Prawdziwe Wędzenie</h1>
+            <p>Tradycyjne receptury, dym olchowy i smak, którego nie zapomnisz.</p>
+            <a href="#oferta" class="cta-button">Sprawdź naszą ofertę</a>
+        </div>
+    </header>
+
+    <section id="o-nas" class="section">
+        <h2 class="title">Nasza Historia</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <p>Mięsny Zakątek J to miejsce w Jaworznie, gdzie jakość mięsa stawiamy na pierwszym miejscu. Nasze wyroby powstają z pasji do tradycyjnego masarstwa.</p>
+            </div>
+            <div class="hours-card">
+                <h3><i class="fas fa-clock"></i> Zapraszamy:</h3>
+                <p>Pon: 05:00 - 13:00</p>
+                <p>Wt - Pt: 05:00 - 15:30</p>
+                <p>Sob: 05:00 - 11:30</p>
+                <p class="red">Ndz: Nieczynne</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta" class="section dark-bg">
+        <h2 class="title white">Co oferujemy?</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Swojskie Wędliny</h3>
+                <p>Wędzone naturalnie, bez chemii.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bacon"></i>
+                <h3>Świeże Mięso</h3>
+                <p>Codzienne dostawy od sprawdzonych dostawców.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-utensils"></i>
+                <h3>Wyroby Domowe</h3>
+                <p>Pasztety, salcesony i inne specjały.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section">
+        <h2 class="title">Kontakt i Zamówienia</h2>
+        <div class="contact-grid">
+            <div class="contact-box">
                 <p>Grzegorz</p>
                 <a href="tel:+48506322950">506 322 950</a>
             </div>
-            <div class="phone-item">
+            <div class="contact-box">
                 <p>Bożena</p>
                 <a href="tel:+48506027305">506 027 305</a>
             </div>
-            <div class="phone-item">
+            <div class="contact-box">
                 <p>Przemysław</p>
                 <a href="tel:+48519818565">519 818 565</a>
             </div>
         </div>
     </section>
 
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.48866539121!2d19.261895!3d50.207129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e99214c77f07%3A0xc62262d1891961e6!2sAleja%20J%C3%B3zefa%20Pi%C5%82sudskiego%2023%2C%2043-600%20Jaworzno!5e0!3m2!1spl!2spl!4v1700000000000" 
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
     <footer>
-        © 2026 Mięsny Zakątek - Jaworzno.
+        <p>© 2026 Mięsny Zakątek J | Jaworzno, Aleja Piłsudskiego 23</p>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("side-menu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
