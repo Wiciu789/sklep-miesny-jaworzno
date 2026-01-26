@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mięsny Zakątek - Strona Główna</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mięsny Zakątek J - Jaworzno | Tradycyjne Wyroby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --dark-green: #1b2e20;
+            --wood-brown: #bc8f8f;
+            --light-beige: #f5f5dc;
+            --accent-red: #8b0000;
+            --text-white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body { background-color: #fafafa; color: #333; line-height: 1.6; }
+
+        /* Navigation */
+        nav { background: var(--dark-green); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--wood-brown); }
+        .logo span { color: white; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Info Section */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 50px 5%; background: #fff; }
+        .info-card { background: var(--light-beige); padding: 30px; border-radius: 8px; border-left: 5px solid var(--wood-brown); }
+        .info-card h3 { color: var(--dark-green); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+        /* Hours Table */
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px 0; border-bottom: 1px solid #ddd; }
+        .closed { color: var(--accent-red); font-weight: bold; }
+
+        /* Contact Section */
+        .contact { padding: 50px 5%; background: var(--dark-green); color: white; text-align: center; }
+        .phone-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px; }
+        .phone-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 5px; min-width: 200px; }
+        .phone-item a { color: var(--wood-brown); text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+
+        /* Map */
+        .map-container { height: 400px; width: 100%; }
+
+        footer { background: #111; color: #777; text-align: center; padding: 20px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { flex-direction: column; gap: 10px; }
+        }
+    </style>
 </head>
 <body>
-  <!-- Banner z adresem -->
-  <div class="banner">
-    Aleja Piłsudskiego 23, Jaworzno • Pon 6–13:30, Wt–Pt 6–15:30, Sob 6–11:30
-  </div>
 
-  <!-- Menu -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Strona Główna</a></li>
-      <li><a href="onas.html">O nas</a></li>
-      <li><a href="produkty.html">Produkty</a></li>
-      <li><a href="dostawa.html">Dostawa</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">Mięsny Zakątek <span>J</span></div>
+        <div>Jaworzno, Piłsudskiego 23</div>
+    </nav>
 
-  <!-- Hero -->
-  <section class="hero fade-in">
-    <h1>Witamy w Mięsnym Zakątku</h1>
-    <p>Świeże mięsa i wyroby prosto z naszej wędzarni</p>
-  </section>
+    <section class="hero">
+        <h1>Mięsny Zakątek J</h1>
+        <p>Najwyższej jakości mięso i tradycyjne wędliny w Jaworznie. Świeżość, którą czuć w każdym kęsie.</p>
+    </section>
 
-  <!-- Wyróżnione produkty -->
-  <section class="products fade-in">
-    <!-- TU ZMIENIASZ obrazki i opisy -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="Szynka">
-      <h3>Szynka Wędzona</h3>
-      <p>Aromatyczna, wędzona w tradycyjny sposób, idealna na kanapki i przekąski.</p>
+    <section class="info-grid">
+        <div class="info-card">
+            <h3><i class="fas fa-clock"></i> Godziny Otwarcia</h3>
+            <table>
+                <tr><td>Poniedziałek:</td><td>05:00 - 13:00</td></tr>
+                <tr><td>Wtorek - Piątek:</td><td>05:00 - 15:30</td></tr>
+                <tr><td>Sobota:</td><td>05:00 - 11:30</td></tr>
+                <tr><td>Niedziela:</td><td class="closed">Nieczynne</td></tr>
+            </table>
+        </div>
+
+        <div class="info-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Lokalizacja</h3>
+            <p><strong>Aleja Piłsudskiego 23</strong><br>43-600 Jaworzno</p>
+            <p style="margin-top:10px; font-size: 0.9rem; color: #666;">Zapraszamy na zakupy prosto z lady!</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Zamówienia i Kontakt</h2>
+        <p>Zadzwoń do nas, aby zarezerwować swoje ulubione wyroby:</p>
+        <div class="phone-list">
+            <div class="phone-item">
+                <p>Grzegorz</p>
+                <a href="tel:+48506322950">506 322 950</a>
+            </div>
+            <div class="phone-item">
+                <p>Bożena</p>
+                <a href="tel:+48506027305">506 027 305</a>
+            </div>
+            <div class="phone-item">
+                <p>Przemysław</p>
+                <a href="tel:+48519818565">519 818 565</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d2552.053738090547!2d19.2638361!3d50.2162351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ef68f63c8c71%3A0x67a99f36f6874e50!2sAleja%20J%C3%B3zefa%20Pi%C5%82sudskiego%2023%2C%2043-600%20Jaworzno!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="Kiełbasa">
-      <h3>Kiełbasa Polska</h3>
-      <p>Klasyczna receptura, mocno przyprawiona, pachnąca dymem z bukowego drewna.</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="Boczek">
-      <h3>Boczek Pieczony</h3>
-      <p>Soczysty boczek pieczony w ziołach, chrupiąca skórka i intensywny smak.</p>
-    </div>
-  </section>
 
-  <!-- Stopka -->
-  <footer>
-    <p>&copy; 2025 Mięsny Zakątek • <a href="kontakt.html">Kontakt</a></p>
-  </footer>
+    <footer>
+        &copy; 2026 Mięsny Zakątek J - Jaworzno. Projekt i realizacja: Twój Syn
+    </footer>
+
 </body>
 </html>
