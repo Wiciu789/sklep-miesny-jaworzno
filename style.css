@@ -1,117 +1,163 @@
-/* ========== KOLORY I MOTYW ========== */
+/* Główne zmienne kolorów */
 :root {
-  --brand: #8b3a2b; /* Ciepła czerwień */
-  --brand-dark: #2b1b16; /* Ciemne drewno */
-  --cream: #f6f2ea; /* Jasny krem */
-  --text-dark: #2b1b16;
-  --text-light: #ffffff;
-  --transition-speed: 0.4s;
+    --dark-green: #1b2e20;
+    --wood-brown: #bc8f8f;
+    --light-beige: #f5f5dc;
+    --accent-red: #8b0000;
+    --text-white: #ffffff;
+    --bg-gray: #f4f4f4;
 }
 
-/* Tryb ciemny */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cream: #1e1b18;
-    --text-dark: #f0e9df;
-    --text-light: #ffffff;
-  }
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
-/* ========== RESET I GLOBAL ========== */
-body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  margin: 0;
-  background: var(--cream);
-  color: var(--text-dark);
-  line-height: 1.6;
+body { 
+    background-color: var(--bg-gray); 
+    color: #333; 
+    line-height: 1.6; 
 }
 
-/* Animacja fade-in */
-.fade-in {
-  opacity: 0;
-  transform: translateY(15px);
-  animation: fadeInUp 0.8s ease forwards;
-}
-@keyframes fadeInUp {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ========== BANNER Z ADRESEM ========== */
-.banner {
-  background: var(--brand);
-  color: var(--text-light);
-  font-size: 0.9rem;
-  padding: 0.3rem 1rem;
-  text-align: center;
+/* Nawigacja */
+nav { 
+    background: var(--dark-green); 
+    color: white; 
+    padding: 1.2rem 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
 }
 
-/* ========== MENU ========== */
-nav {
-  background: var(--cream);
-  border-bottom: 2px solid var(--brand);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.logo { 
+    font-size: 1.6rem; 
+    font-weight: 800; 
+    letter-spacing: 1px;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  margin: 0;
-}
-nav ul li { margin: 0 1rem; }
-nav ul li a {
-  color: var(--brand-dark);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color var(--transition-speed);
-}
-nav ul li a:hover { color: var(--brand); }
 
-/* ========== HERO ========== */
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
+.logo span { 
+    color: var(--wood-brown); 
 }
-.hero h1 { font-size: 2.5rem; color: var(--brand-dark); }
-.hero p { font-size: 1.2rem; color: var(--brand); }
 
-/* ========== KARTY PRODUKTÓW ========== */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem 1rem;
+/* Hero Section - Nagłówek wizualny */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=1500&auto=format&fit=crop');
+    background-size: cover; 
+    background-position: center; 
+    height: 70vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    padding: 20px;
 }
-.card {
-  background: #fff;
-  border: 1px solid #e9dfcd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform var(--transition-speed);
-}
-.card:hover { transform: translateY(-5px); }
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.card h3 { padding: 1rem; color: var(--brand-dark); }
-.card p { padding: 0 1rem 1rem; }
 
-/* ========== STOPKA ========== */
-footer {
-  background: var(--brand-dark);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+.hero h1 { 
+    font-size: 3.5rem; 
+    margin-bottom: 15px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-footer a {
-  color: var(--cream);
-  text-decoration: none;
+
+.hero p { 
+    font-size: 1.3rem; 
+    max-width: 700px; 
+    font-weight: 300;
 }
-footer a:hover { text-decoration: underline; }
+
+/* Sekcja Informacyjna */
+.container {
+    max-width: 1200px;
+    margin: -50px auto 50px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.info-card { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 { 
+    color: var(--dark-green); 
+    margin-bottom: 25px; 
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--wood-brown);
+    padding-bottom: 10px;
+}
+
+/* Tabela godzin */
+table { width: 100%; border-collapse: collapse; }
+td { padding: 12px 0; border-bottom: 1px solid #eee; }
+.closed { color: var(--accent-red); font-weight: bold; }
+
+/* Kontakt */
+.contact { 
+    padding: 80px 5%; 
+    background: var(--dark-green); 
+    color: white; 
+    text-align: center; 
+}
+
+.phone-list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 40px; 
+}
+
+.phone-item { 
+    background: rgba(255,255,255,0.05); 
+    padding: 25px; 
+    border-radius: 10px; 
+    border: 1px solid rgba(188, 143, 143, 0.3);
+    min-width: 250px; 
+}
+
+.phone-item p { margin-bottom: 10px; opacity: 0.8; text-transform: uppercase; font-size: 0.8rem; }
+
+.phone-item a { 
+    color: var(--wood-brown); 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.4rem; 
+    transition: color 0.3s;
+}
+
+.phone-item a:hover { color: white; }
+
+/* Mapa */
+.map-container { height: 450px; width: 100%; filter: grayscale(0.2); }
+
+footer { 
+    background: #000; 
+    color: #888; 
+    text-align: center; 
+    padding: 30px; 
+    font-size: 0.85rem; 
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    nav { flex-direction: column; text-align: center; padding: 1rem; }
+    .container { margin-top: 20px; }
+}
