@@ -5,20 +5,15 @@
     --mcd-white: #ffffff;
     --mcd-gray: #f5f5f6;
     --green-dark: #1b2e20;
-    --pantry-bg: #fdfaf1;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Poppins', sans-serif; background: var(--mcd-white); color: var(--mcd-black); line-height: 1.6; overflow-x: hidden; }
-html { scroll-behavior: smooth; }
 
 /* Nawigacja */
 .main-nav { background: var(--green-dark); color: white; padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-.logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -1px; text-transform: uppercase; }
-.logo span { color: var(--mcd-gold); }
-.menu-btn { cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
-.bar { width: 28px; height: 3px; background: white; border-radius: 2px; }
+.logo { font-weight: 800; font-size: 1.5rem; text-transform: uppercase; }
 
 /* Sidebar */
 .sidebar { height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0; background: var(--mcd-black); overflow-x: hidden; transition: 0.5s; padding-top: 60px; }
@@ -27,67 +22,33 @@ html { scroll-behavior: smooth; }
 .sidebar .closebtn { position: absolute; top: 10px; right: 25px; font-size: 36px; }
 
 /* Hero */
-.hero-v2 { 
-    height: 85vh; 
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1500&auto=format&fit=crop'); 
-    background-size: cover; 
-    background-position: center; 
-    margin-top: 50px;
-    display: flex; align-items: center; justify-content: center;
-}
-.hero-content { color: white; text-align: center; padding: 0 20px; }
-.badge-year { background: var(--mcd-gold); color: var(--mcd-black); padding: 6px 18px; font-weight: 800; border-radius: 50px; font-size: 0.8rem; display: inline-block; margin-bottom: 20px; }
-.hero-content h1 { font-size: clamp(2.2rem, 8vw, 4.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
-.hero-content p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; font-weight: 300; }
-.mcd-btn { background: var(--mcd-gold); color: var(--mcd-black); padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: 700; transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+.hero-v2 { height: 85vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1500&auto=format&fit=crop'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 50px; }
+.hero-content h1 { font-size: clamp(2.2rem, 8vw, 4.5rem); font-weight: 800; margin-bottom: 20px; }
+.mcd-btn { background: var(--mcd-gold); color: var(--mcd-black); padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: 700; transition: 0.3s; display: inline-block; }
 .mcd-btn:hover { transform: scale(1.05); background: white; }
 
-/* Sekcje */
-.mcd-section { padding: 80px 0; }
-.mcd-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-.mcd-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.mcd-card { padding: 40px; border-radius: 35px; color: white; }
-.mcd-card.dark { background: var(--mcd-black); }
-.mcd-card.gold { background: var(--mcd-gold); color: var(--mcd-black); }
-.card-label { background: var(--mcd-red); color: white; padding: 4px 12px; border-radius: 5px; font-size: 0.7rem; font-weight: 800; display: inline-block; margin-bottom: 10px; }
-
-/* Oferta */
-.gray { background: var(--mcd-gray); }
-.center-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; font-weight: 800; }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-.product-item { background: white; padding: 40px; border-radius: 30px; text-align: center; transition: 0.4s; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
-.product-item:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
-.p-icon { font-size: 3rem; color: var(--mcd-red); margin-bottom: 20px; }
-
-/* Spiżarnia */
-.pantry-section { padding: 40px 0; background: white; }
-.pantry-banner { background: var(--pantry-bg); border-radius: 40px; padding: 50px; border: 1px solid #eee; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
-.pantry-text h3 { font-size: 2rem; margin-bottom: 15px; font-weight: 800; color: var(--green-dark); }
-.tag { background: var(--green-dark); color: white; padding: 6px 15px; border-radius: 50px; font-size: 0.8rem; margin-right: 8px; font-weight: 600; }
+/* Galeria Produktów (NOWE) */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.gallery-card { background: white; border-radius: 35px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: 0.3s; }
+.gallery-card:hover { transform: translateY(-10px); }
+.gallery-card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 5px solid var(--mcd-gold); }
+.card-text { padding: 25px; text-align: center; }
 
 /* Gorące Czwartki */
-.hot-banner { background: var(--mcd-red); color: white; padding: 80px 20px; text-align: center; border-radius: 40px; margin: 40px 20px; }
-.fire-icon { font-size: 4rem; color: var(--mcd-gold); margin-bottom: 15px; animation: flicker 1.5s infinite; }
+.hot-banner { background: var(--mcd-red); color: white; padding: 60px 20px; text-align: center; border-radius: 40px; margin: 40px 20px; }
 .hot-time { display: inline-block; margin-top: 25px; border: 2px solid white; padding: 10px 30px; border-radius: 50px; font-weight: 800; }
 
-/* Kontakt */
+/* Sekcje i Kontakt */
+.mcd-section { padding: 80px 0; }
+.gray { background: var(--mcd-gray); }
+.mcd-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.center-title { text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 50px; }
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
 .hours-list { list-style: none; margin-top: 20px; }
 .hours-list li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee; }
-.red { color: var(--mcd-red); }
-.contact-row { margin-bottom: 15px; font-size: 1.1rem; }
-.contact-row a { color: var(--mcd-red); text-decoration: none; font-weight: 800; }
-.note { font-size: 0.85rem; color: #666; font-style: italic; display: block; }
-
+.red { color: var(--mcd-red); font-weight: 700; }
 .final-footer { background: var(--mcd-gray); text-align: center; padding: 40px; color: #999; font-size: 0.8rem; }
 
-@keyframes flicker {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.1); }
-}
-
-@media (max-width: 768px) {
-    .pantry-banner { text-align: center; justify-content: center; }
-    .hero-v2 { height: 70vh; }
-    .nav-loc { display: none; }
-}
+/* Menu Btn */
+.menu-btn { cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
+.bar { width: 28px; height: 3px; background: white; border-radius: 2px; }
